@@ -1,0 +1,134 @@
+.services {
+  padding: 80px 20px;
+  background: #f7faff;
+  text-align: center;
+  margin-top: -40px;
+}
+
+.businessHeading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a3c6d;
+  margin-bottom: 10px;
+}
+
+.villageName {
+  color: #007bff;
+}
+
+.f-cont {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+}
+
+.servicesHeading {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #1a3c6d;
+}
+
+.servicespara {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Card Container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* increased min width */
+  gap: 30px;
+  max-width: 1200px; /* increased max width */
+  margin: 0 auto;
+}
+
+/* Card Styles */
+.cardOne {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* slightly stronger shadow */
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 25px; /* increased padding */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardOne:hover {
+  transform: translateY(-10px); /* slightly higher lift */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.coolimg {
+  width: 100%;
+  height: 220px; /* increased height */
+  object-fit: cover;
+}
+
+.cardhead {
+  margin: 20px 0 10px;
+  font-size: 1.5rem; /* bigger heading */
+  color: #1a3c6d;
+}
+
+.cardpara {
+  font-size: 1rem; /* slightly bigger text */
+  color: #555;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+/* Responsive Text */
+@media (max-width: 768px) {
+  .businessHeading {
+    font-size: 2rem;
+  }
+  .servicesHeading {
+    font-size: 2.5rem;
+  }
+  .cardhead {
+    font-size: 1.3rem;
+  }
+  .cardpara {
+    font-size: 0.95rem;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    padding: 60px 15px;
+  }
+  .businessHeading {
+    font-size: 1rem;
+  }
+  .servicesHeading {
+    font-size: 1.8rem;
+    text-align: start;
+  }
+  .servicespara {
+    font-size: 0.7rem;
+  }
+  .cardhead {
+    font-size: 0.9rem;
+  }
+  .cardpara {
+    font-size: 0.5rem;
+    padding: 0 10px;
+    text-align: start;
+  }
+  
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* exactly 3 cards per row */
+    gap: 15px; /* tighter gap for small screens */
+  }
+
+  .cardOne {
+    padding-bottom: 15px; 
+  }
+
+  .coolimg {
+    height: 120px; /* optional: smaller image height for compact layout */
+  }
+}

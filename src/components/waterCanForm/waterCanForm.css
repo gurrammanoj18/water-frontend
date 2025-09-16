@@ -1,0 +1,113 @@
+/* Form container */
+.watercan-form {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 35px 25px;
+  max-width: 420px;
+  width: 90%;
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto;
+}
+
+
+
+
+.form-cans{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.watercan-form:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+.payment-methods{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+.watercan-form input,
+.watercan-form select {
+  padding: 14px 16px;
+  
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  gap: 10px;
+  outline: none;
+  background: #fff;
+  margin-bottom: 10px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.watercan-form input:focus,
+.watercan-form select:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 10px rgba(0, 119, 255, 0.2);
+}
+
+/* Button */
+.watercan-form button {
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #0077ff, #005fcc);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.watercan-form button:hover {
+  background: linear-gradient(135deg, #005fcc, #004bb5);
+  transform: scale(1.05);
+}
+
+/* Cart and Payment sections */
+.cart-section,
+.confirmation,
+.cart {
+  max-width: 520px;
+  margin: 25px auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fafafa;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.payment-option{
+  width: 300px;
+  padding-left: 0px;
+}
+.payment-options label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .watercan-form {
+    padding: 25px 18px;
+  }
+
+  .watercan-form input,
+  .watercan-form select {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .watercan-form button {
+    width: 100%;
+    padding: 14px 0;
+  }
+}

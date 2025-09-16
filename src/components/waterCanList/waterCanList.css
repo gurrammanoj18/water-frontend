@@ -1,0 +1,19 @@
+.watercan-list-container {
+  margin-top: 20px;
+}
+
+.watercan-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.watercan-item {
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: left;
+  background-color: #f9f9f9;
+}

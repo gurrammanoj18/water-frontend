@@ -1,0 +1,134 @@
+
+.chooseHead {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a3c6d;
+  margin-bottom: 50px;
+}
+
+.choose-div{
+  margin-top: -20px;
+}
+
+.chooseCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.unorderList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 550px;
+  font-size: 1.1rem;
+  color: #333;
+  position: relative;
+}
+
+.unorderList li {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  padding-left: 25px;
+  position: relative;
+}
+
+.unorderList li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.spanOne {
+  color: #1a3c6d;
+  font-weight: 600;
+}
+
+.saveWaterLogo {
+  position: absolute;
+  right: -60px;
+  bottom: -40px;
+  width: 100px;
+  opacity: 0.15;
+}
+
+.imgList {
+  width: 120px;
+  
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+/* ===========================
+   LARGE SCREENS (DESKTOP)
+   =========================== */
+@media (min-width: 1200px) {
+  .chooseHead {
+    font-size: 3rem;
+  }
+
+  .chooseCard {
+    gap: 80px;
+  }
+  .saveWaterLogo {
+    display: block;
+  }
+
+  .unorderList {
+    font-size: 1.2rem;
+  }
+
+  .imgList {
+    width: 320px;
+  }
+}
+
+/* ===========================
+   MEDIUM SCREENS (TABLETS)
+   =========================== */
+@media (max-width: 992px) {
+  .chooseCard {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+   
+
+  .unorderList {
+    max-width: 100%;
+  }
+
+  .saveWaterLogo {
+    display: none;
+  }
+
+  .imgList {
+    width: 25%;
+  }
+}
+
+/* ===========================
+   SMALL SCREENS (MOBILE)
+   =========================== */
+@media (max-width: 576px) {
+  .chooseHead {
+    font-size: 1.8rem;
+  }
+
+  .unorderList {
+    font-size: 1rem;
+  }
+
+  .imgList {
+    width: 50%;
+  }
+}
